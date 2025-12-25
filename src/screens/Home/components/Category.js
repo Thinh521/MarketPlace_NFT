@@ -1,3 +1,4 @@
+import {useNavigation} from '@react-navigation/core';
 import React, {useState} from 'react';
 import {FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
@@ -7,6 +8,7 @@ import {Colors, FontSizes, FontWeights} from '~/theme/theme';
 import {scale} from '~/utils/scaling';
 
 const Category = () => {
+  const navigation = useNavigation();
   const [activeTab, setActiveTab] = useState('ALL');
 
   const tabs = [
@@ -27,7 +29,12 @@ const Category = () => {
         contentContainerStyle={styles.tabsList}
         renderItem={({item: tab}) => (
           <TouchableOpacity
-            onPress={() => setActiveTab(tab.key)}
+            onPress={() => {
+              setActiveTab(tab.key);
+              navigation.navigate('BottomTab', {
+                screen: 'Activity',
+              });
+            }}
             activeOpacity={0.7}
             style={[
               styles.tabChip,

@@ -32,7 +32,7 @@ import {VALIDATION_RULES} from '~/validations/authValidations';
 import {commonStyles} from '~/styles/common';
 import {Colors} from '~/theme/theme';
 import {scale} from '~/utils/scaling';
-import styles from './ProductCollectionManager.styles';
+import styles from './CollectionManager.styles';
 
 // Constants
 const ERROR_MESSAGES = {
@@ -44,7 +44,7 @@ const ERROR_MESSAGES = {
   UNKNOWN_ERROR: 'Đã xảy ra lỗi không xác định. Vui lòng thử lại',
 };
 
-const ProductCollectionManagerScreen = () => {
+const CollectionManagerScreen = () => {
   const navigation = useNavigation();
   const collection = useRoute().params?.collection;
 
@@ -428,4 +428,4 @@ const ProductCollectionManagerScreen = () => {
   );
 };
 
-export default ProductCollectionManagerScreen;
+export default CollectionManagerScreen;

@@ -8,18 +8,18 @@ import ProductPostingScreen from '../screens/ProductPosting';
 import {getHeader} from '../navigation/getHeader';
 import UpdateProfileScreen from '../screens/UpdateProfile';
 import CreateUpdateNFTScreen from '../screens/CreateNFT';
-import ProductCollectionManagerScreen from '../screens/ProductCollectionManager';
-import CollectionDetailScreen from '../screens/CollectionDetail';
-import AddProductsToCollectionScreen from '../screens/AddProductsToCollection';
 import SettingScreen from '../screens/Setting';
 import MakeOfferScreen from '../screens/MakeOffer';
-import PlaceBidScreen from '../screens/PlaceBid';
-import AuctionDetailScreen from '../screens/AuctionDetail';
 import LoginRequiredScreen from '../screens/LoginRequired';
 import SearchAndFilterScreen from '../screens/SearchAndFilter';
-import AllCollectionsScreen from '../screens/AllCollections';
 import AllProductsScreen from '../screens/AllProducts/AllProductsScreen';
 import OnboardingScreen from '../screens/Onboarding';
+import CollectionScreen from '../screens/Collection/CollectionScreen';
+import CollectionManagerScreen from '../screens/Collection/CollectionManager';
+import AddProductsToCollectionScreen from '../screens/Collection/AddProductsToCollection';
+import AllCollectionsScreen from '../screens/Collection/AllCollections';
+import PlaceBidScreen from '../screens/Auction/PlaceBid';
+import AuctionDetailScreen from '../screens/Auction/AuctionDetail';
 
 const routerNoBottomTab = [
   {
@@ -150,16 +150,16 @@ const routerNoBottomTab = [
     }),
   },
   {
-    name: 'ProductCollectionManager',
-    component: ProductCollectionManagerScreen,
+    name: 'CollectionManagerScreen',
+    component: CollectionManagerScreen,
     options: getHeader({
       title: 'Product Collection Manager',
       subTitle: 'Create, edit, and delete your NFT collections',
     }),
   },
   {
-    name: 'CollectionDetail',
-    component: CollectionDetailScreen,
+    name: 'Collection',
+    component: CollectionScreen,
   },
   {
     name: 'AddProductsToCollection',

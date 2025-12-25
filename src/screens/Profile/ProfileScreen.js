@@ -157,8 +157,6 @@ const ProfileScreen = ({route, navigation}) => {
           settled: auction[8],
         };
 
-        console.log('auctionObj', auctionObj);
-
         if (
           !auctionObj.settled &&
           auctionObj.highestBidder.toLowerCase() !==
@@ -167,8 +165,6 @@ const ProfileScreen = ({route, navigation}) => {
           withdrawable.push(id);
         }
       }
-
-      console.log('withdrawable', withdrawable);
 
       setRefundableAuctions(withdrawable);
     } catch (error) {
@@ -210,8 +206,6 @@ const ProfileScreen = ({route, navigation}) => {
       });
     }
   };
-
-  console.log('refundableAuctions', refundableAuctions);
 
   const handleToggleFollow = async ({userAddress}) => {
     try {
@@ -623,7 +617,7 @@ const ProfileScreen = ({route, navigation}) => {
                           icon={<PlusIcon />}
                           onPress={() => {
                             navigation.navigate('NoBottomTab', {
-                              screen: 'ProductCollectionManager',
+                              screen: 'CollectionManagerScreen',
                             });
                           }}
                           style={{width: scale(32), height: scale(32)}}

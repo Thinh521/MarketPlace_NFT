@@ -28,9 +28,9 @@ import {useProductsByCollection} from '~/hooks/useProductsByCollection';
 import {commonStyles} from '~/styles/common';
 
 import {Colors} from '~/theme/theme';
-import styles from './CollectionDetail.styles';
+import styles from './Collection.styles';
 
-const CollectionDetailScreen = ({navigation, route}) => {
+const CollectionScreen = ({navigation, route}) => {
   const {address} = useAppKitAccount();
   const {collection, addressWallet, avatar, fullName} = route.params || {};
 
@@ -254,4 +254,4 @@ const CollectionDetailScreen = ({navigation, route}) => {
   );
 };
 
-export default CollectionDetailScreen;
+export default CollectionScreen;

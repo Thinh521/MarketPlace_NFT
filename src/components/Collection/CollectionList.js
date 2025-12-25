@@ -24,7 +24,7 @@ const CollectionList = ({
             item={item}
             onPress={() =>
               navigation.navigate('NoBottomTab', {
-                screen: 'CollectionDetail',
+                screen: 'Collection',
                 params: {
                   collection: item,
                   addressWallet: addressWallet,
@@ -38,7 +38,7 @@ const CollectionList = ({
                 ? false
                 : () =>
                     navigation.navigate('NoBottomTab', {
-                      screen: 'ProductCollectionManager',
+                      screen: 'CollectionManagerScreen',
                       params: {
                         collection: item,
                       },

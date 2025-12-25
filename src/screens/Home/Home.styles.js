@@ -24,19 +24,6 @@ export default StyleSheet.create({
     fontSize: 24,
     fontWeight: FontWeights.extraBold,
   },
-  buttonMore: {
-    borderRadius: 999,
-    paddingVertical: scale(6),
-    paddingHorizontal: scale(12),
-    borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.1)',
-    backgroundColor: 'rgba(255,255,255,0.03)',
-  },
-  viewMoreText: {
-    fontSize: 14,
-    fontWeight: '600',
-    color: Colors.primary,
-  },
   carouselContainer: {
     alignItems: 'center',
   },

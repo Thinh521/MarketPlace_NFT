@@ -27,10 +27,10 @@ export const getRouterBottomTab = navigation => [
     },
   },
   {
-    name: 'Discover',
-    component: DiscoverScreen,
-    label: 'Discover',
-    Icon: DiscoverIconTab,
+    name: 'Activity',
+    component: ActivityScreen,
+    label: 'Activity',
+    Icon: ActivityIconTab,
     hasLayout: true,
     options: {
       headerShown: false,
@@ -38,10 +38,10 @@ export const getRouterBottomTab = navigation => [
     },
   },
   {
-    name: 'Activity',
-    component: ActivityScreen,
-    label: 'Activity',
-    Icon: ActivityIconTab,
+    name: 'Discover',
+    component: DiscoverScreen,
+    label: 'Discover',
+    Icon: DiscoverIconTab,
     hasLayout: true,
     options: {
       headerShown: false,

@@ -23,7 +23,7 @@ const CollectionSlider = ({data, onEditPress}) => {
             item={item}
             onPress={() =>
               navigation.navigate('NoBottomTab', {
-                screen: 'CollectionDetail',
+                screen: 'Collection',
                 params: {
                   collection: item,
                 },
@@ -34,7 +34,7 @@ const CollectionSlider = ({data, onEditPress}) => {
                 ? false
                 : () =>
                     navigation.navigate('NoBottomTab', {
-                      screen: 'ProductCollectionManager',
+                      screen: 'CollectionManagerScreen',
                       params: {
                         collection: item,
                       },
