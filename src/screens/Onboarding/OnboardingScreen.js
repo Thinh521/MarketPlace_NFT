@@ -16,7 +16,6 @@ import LinearGradient from 'react-native-linear-gradient';
 import Images from '~/assets/images/images';
 import {Arrow_Right_S_Icon} from '~/assets/icons/icons';
 
-import onboardingData from '~/data/onboardingData';
 import {setOnboarding} from '~/storage/onboardingStorage';
 
 import {Colors} from '~/theme/theme';
@@ -24,6 +23,27 @@ import styles from './Onboarding.styles';
 import {useNavigation} from '@react-navigation/core';
 
 const {width: screenWidth} = Dimensions.get('window');
+
+const onboardingData = [
+  {
+    id: 1,
+    title: 'Quản lý tất cả nông sản',
+    description: 'Dễ dàng quản lý, theo dõi và bán nông sản hiệu quả.',
+    image: Images.onboarding_1,
+  },
+  {
+    id: 2,
+    title: 'Truy xuất nguồn gốc nông sản',
+    description: 'Đảm bảo minh bạch, nâng cao niềm tin cho người tiêu dùng.',
+    image: Images.onboarding_2,
+  },
+  {
+    id: 3,
+    title: 'Kết nối nông dân với người mua',
+    description: 'Mở rộng thị trường và tăng doanh thu cho nhà nông.',
+    image: Images.onboarding_3,
+  },
+];
 
 const OnboardingScreen = () => {
   const navigation = useNavigation();
